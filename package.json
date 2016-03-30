@@ -1,0 +1,28 @@
+{
+  "name": "tc-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Taskcluster coding challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index",
+    "test": "mocha --bail --timeout 20s --ui tdd tests.js"
+  },
+  "keywords": [
+    "taskcluster",
+    "challenge"
+  ],
+  "author": "Eli Perelman <eli@eliperelman.com> (http://eliperelman.com/)",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "body-parser": "1.15.0",
+    "express": "4.13.4",
+    "superagent": "1.8.3",
+    "superagent-promise": "1.1.0"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "mocha": "2.4.5",
+    "tcp-port-used": "0.1.2"
+  }
+}
